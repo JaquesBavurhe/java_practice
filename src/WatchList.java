@@ -16,7 +16,7 @@ public class WatchList {
         String[] recommendedList = new String[3];
 
 
-        //using for loop to iterate through the list in watchList
+        //using an enhanced "for loop" to iterate through the list in watchList
         for(String anime : watchList){
             System.out.print(anime + ", ");
         }
