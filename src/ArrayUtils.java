@@ -1,5 +1,11 @@
 class ArrayUtils {
 
+    static void main() {
+        int[] someNum = {1,12,2,23,3,3};
+
+        System.out.println(sum(someNum));
+
+    }
     //returns the total of all numbers (0 for an empty array).
     static int sum(int[] numbers) {
 
@@ -20,7 +26,7 @@ class ArrayUtils {
         if(numbers.length == 0){
             throw new IllegalArgumentException("Array must not be empty");
         }
-
+        
         int max = numbers[0];
 
         for (int n : numbers) {
@@ -37,8 +43,10 @@ class ArrayUtils {
 
     //returns the average as a double (0.0 for an empty array).
     static double average(int[] numbers) {
-        if(numbers.length == 0)
+        if(numbers.length == 0) {
             return 0.0;
+        }
+
         int sum = 0;
 
         for (int num : numbers){
